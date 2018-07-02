@@ -266,6 +266,13 @@
     "@babel/helper-replace-supers" "7.0.0-beta.51"
     "@babel/plugin-syntax-class-properties" "7.0.0-beta.51"
 
+"@babel/plugin-proposal-decorators@^7.0.0-beta.51":
+  version "7.0.0-beta.51"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.0.0-beta.51.tgz#7e903a57edbb2d98f7ae5ead71306e3d7b4487fe"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.51"
+    "@babel/plugin-syntax-decorators" "7.0.0-beta.51"
+
 "@babel/plugin-proposal-object-rest-spread@7.0.0-beta.51", "@babel/plugin-proposal-object-rest-spread@^7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.0.0-beta.51.tgz#5bc469e5e6d1b84a5d6046b59e90ca016c2086d6"
@@ -297,6 +304,12 @@
 "@babel/plugin-syntax-class-properties@7.0.0-beta.51", "@babel/plugin-syntax-class-properties@^7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-class-properties/-/plugin-syntax-class-properties-7.0.0-beta.51.tgz#f0cbf6f22a879c593a07e8e141c908e087701e91"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.51"
+
+"@babel/plugin-syntax-decorators@7.0.0-beta.51":
+  version "7.0.0-beta.51"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.0.0-beta.51.tgz#b8f1a4be6e331dd9356797e407980358bda427ae"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.51"
 
