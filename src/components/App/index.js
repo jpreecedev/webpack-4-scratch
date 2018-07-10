@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import styles from './styles'
+import styles from './styles.scss'
 
-import { AlertDecorator } from '../AlertDecorator'
+import alert from '../../decorators/alert'
 
 class App extends Component {
   state = {
     message: 'Hello, World!'
   }
 
-  @AlertDecorator('Goodbye, World!')
+  @alert('Goodbye, World!')
   showMessage = () => {
     alert(this.state.message)
   }

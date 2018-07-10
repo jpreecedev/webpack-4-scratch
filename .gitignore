@@ -261,3 +261,5 @@ yarn-error.log*
 wwwroot/npm-debug.log*
 wwwroot/uploads
 wwwroot/static/uploads
+
+coverage
