@@ -13,5 +13,8 @@
     "jest/globals": true
   },
   "plugins": ["jest"],
-  "extends": ["standard", "standard-react", "prettier", "plugin:jest/recommended"]
+  "extends": ["standard", "standard-react", "prettier", "plugin:jest/recommended"],
+  "rules": {
+    "react/prop-types": "off"
+  }
 }
