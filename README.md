@@ -22,5 +22,4 @@ yarn build
 yarn lint
 
 # Run unit tests
-yarn test
-`
+yarn test`
