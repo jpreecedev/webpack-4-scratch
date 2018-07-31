@@ -1,3 +1,4 @@
+const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -15,11 +16,15 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: path.resolve(__dirname, 'global'),
         loader: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
+              includeFolders: ['./src'],
+              excludeFolders: ['./global'],
               modules: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
               camelCase: true,
@@ -33,6 +38,12 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        exclude: path.resolve(__dirname, 'src'),
+        include: path.resolve(__dirname, 'global'),
+        loader: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.html$/,
