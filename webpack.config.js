@@ -23,8 +23,6 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              includeFolders: ['./src'],
-              excludeFolders: ['./global'],
               modules: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
               camelCase: true,
