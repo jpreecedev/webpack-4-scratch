@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './styles.scss'
+import styles from './styles.module.scss'
 
 import alert from '../../decorators/alert'
 

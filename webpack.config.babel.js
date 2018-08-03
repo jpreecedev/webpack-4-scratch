@@ -1,4 +1,3 @@
-import path from 'path'
 import HtmlWebPackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
@@ -15,9 +14,7 @@ export default {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        include: path.resolve(__dirname, 'src'),
-        exclude: path.resolve(__dirname, 'global'),
+        test: /\.module\.s(a|c)ss$/,
         loader: [
           MiniCssExtractPlugin.loader,
           {
@@ -38,10 +35,18 @@ export default {
         ]
       },
       {
-        test: /\.scss$/,
-        exclude: path.resolve(__dirname, 'src'),
-        include: path.resolve(__dirname, 'global'),
-        loader: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        test: /\.s(a|c)ss$/,
+        exclude: /\.module.(s(a|c)ss)$/,
+        loader: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
       },
       {
         test: /\.html$/,
