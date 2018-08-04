@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import styles from './styles.module.scss'
 
 import alert from '../../decorators/alert'
 
-class App extends Component {
+class App extends React.Component {
   state = {
     message: 'Hello, World!'
   }
