@@ -486,10 +486,24 @@
     "@babel/helper-get-function-arity" "7.0.0-beta.56"
     "@babel/helper-plugin-utils" "7.0.0-beta.56"
 
+"@babel/plugin-transform-react-constant-elements@^7.0.0-beta.56":
+  version "7.0.0-beta.56"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.0.0-beta.56.tgz#d89eba712837ee982f070df8ad73833c28cb9035"
+  dependencies:
+    "@babel/helper-annotate-as-pure" "7.0.0-beta.56"
+    "@babel/helper-plugin-utils" "7.0.0-beta.56"
+
 "@babel/plugin-transform-react-display-name@7.0.0-beta.56":
   version "7.0.0-beta.56"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.0.0-beta.56.tgz#fc833da81d558d43fda061a1e3e833600555380c"
   dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.56"
+
+"@babel/plugin-transform-react-inline-elements@^7.0.0-beta.56":
+  version "7.0.0-beta.56"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-inline-elements/-/plugin-transform-react-inline-elements-7.0.0-beta.56.tgz#d82e722a5954169ba6f28f70ead086304ecd03c3"
+  dependencies:
+    "@babel/helper-builder-react-jsx" "7.0.0-beta.56"
     "@babel/helper-plugin-utils" "7.0.0-beta.56"
 
 "@babel/plugin-transform-react-jsx-self@7.0.0-beta.56":
