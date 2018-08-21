@@ -15,11 +15,26 @@ class App extends React.Component {
 
   render() {
     return (
-      <header>
-        <h1>Hello, World!</h1>
-        <h2 className={styles.module}>Goodbye</h2>
-        <button onClick={this.showMessage}>Click Me</button>
-      </header>
+      <main>
+        <a
+          className={styles.link}
+          href="https://www.developerhandbook.com"
+          target="_blank"
+        >
+          <img
+            className={styles.image}
+            src="/img/developerhandbook.png"
+            alt="DeveloperHandbook.com"
+          />
+        </a>
+        <h1 className={styles.heading}>
+          A bare bones React boilerplate, featuring Webpack 4, React, Redux, Jest, and
+          Babel 7
+        </h1>
+        <button className={styles.button} onClick={this.showMessage}>
+          Show me a message
+        </button>
+      </main>
     )
   }
 }

@@ -1,5 +1,7 @@
 import HtmlWebPackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import CopyWebpackPlugin from 'copy-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 export default {
   devtool: 'source-map',
@@ -63,6 +65,7 @@ export default {
     extensions: ['.js', '.scss']
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'
@@ -70,6 +73,7 @@ export default {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
-    })
+    }),
+    new CopyWebpackPlugin([{ from: './public' }])
   ]
 }

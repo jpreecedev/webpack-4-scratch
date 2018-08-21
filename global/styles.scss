@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i');
+
 body {
-  color: pink;
+  padding: 20px;
+  font-family: 'IBM Plex Serif', serif;
 }
 
-.random {
-  margin-bottom: 20px;
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
 }
