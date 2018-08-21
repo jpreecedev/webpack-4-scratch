@@ -14,7 +14,9 @@ beforeAll(function() {
 test('should render "Hello, World!" as title', function() {
   var renderedComponent = render()
   var header = renderedComponent.find('h1')
-  expect(header.text()).toBe('Hello, World!')
+  expect(header.text()).toBe(
+    'A bare bones React boilerplate, featuring Webpack 4, React, Redux, Jest, and Babel 7'
+  )
 })
 
 test('should show an alert with the message from the decorator', function() {
