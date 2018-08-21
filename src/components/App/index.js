@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { hot } from 'react-hot-loader'
 import styles from './styles.module.scss'
 
 import alert from '../../decorators/alert'
@@ -39,4 +40,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default hot(module)(App)

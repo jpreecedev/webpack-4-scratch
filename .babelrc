@@ -8,6 +8,7 @@
     "@babel/plugin-syntax-class-properties",
     "@babel/plugin-syntax-object-rest-spread",
     "@babel/plugin-transform-react-inline-elements",
-    "@babel/plugin-transform-react-constant-elements"
+    "@babel/plugin-transform-react-constant-elements",
+    "react-hot-loader/babel"
   ]
 }
