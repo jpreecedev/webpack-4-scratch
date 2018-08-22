@@ -1,13 +1,16 @@
 # Webpack 4, React, Jest, Babel 7 starter project with decorators
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 A pre-configured starter project with the following features (all accurate at time of writing, very likely subject to change!);
-* Webpack 4
-* Babel 7
-* Jest
-* Enzyme
-* ESLint & Prettier
-* Generator/decorator polyfills
-* Example usage of a decorator and its associated unit test
+
+- Webpack 4
+- Babel 7
+- Jest
+- Enzyme
+- ESLint & Prettier
+- Generator/decorator polyfills
+- Example usage of a decorator and its associated unit test
 
 ## Main commands
 
