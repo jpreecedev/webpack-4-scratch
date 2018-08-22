@@ -2,7 +2,7 @@
   "name": "webpack-4-scratch",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --hot",
     "dev": "webpack --mode development",
