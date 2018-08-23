@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { shallow } from 'enzyme'
 
-import App from '.'
+import Home from '..'
 
 function render(props) {
-  return shallow(<App {...props} />)
+  return shallow(<Home {...props} />)
 }
 
 beforeAll(() => {
