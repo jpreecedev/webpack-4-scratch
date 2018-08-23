@@ -1,14 +1,14 @@
 import alertDecorator from './index'
 
-beforeAll(function() {
+beforeAll(() => {
   global.alert = jest.fn()
 })
 
-test('should show the provided message as an alert', function() {
-  var msg = 'Some random text'
+test('should show the provided message as an alert', () => {
+  const msg = 'Some random text'
 
   // Initialize
-  var a = {}
+  const a = {}
   alertDecorator(msg)(null, null, a)
 
   // Invoke

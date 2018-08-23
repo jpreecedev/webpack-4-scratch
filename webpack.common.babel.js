@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import { resolve } from 'path'
 import HtmlWebPackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
@@ -6,6 +8,9 @@ import CleanWebpackPlugin from 'clean-webpack-plugin'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 export default {
+  entry: {
+    main: resolve('./src/index.jsx')
+  },
   output: {
     filename: isDevelopment ? '[name].js' : '[name].[hash].js'
   },
@@ -40,7 +45,7 @@ export default {
         ]
       },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
@@ -91,7 +96,7 @@ export default {
     ]
   },
   resolve: {
-    extensions: ['.js', '.scss', '.gif', '.png', '.jpg', '.jpeg', '.svg']
+    extensions: ['.js', '.jsx', '.scss', '.gif', '.png', '.jpg', '.jpeg', '.svg']
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),

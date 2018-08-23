@@ -13,5 +13,5 @@
     "jest/globals": true
   },
   "plugins": ["jest"],
-  "extends": ["standard", "standard-react", "prettier", "plugin:jest/recommended"]
+  "extends": ["airbnb", "prettier", "plugin:jest/recommended"]
 }

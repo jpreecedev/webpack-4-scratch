@@ -13,7 +13,8 @@ class App extends React.Component {
 
   @alert('Goodbye, World!')
   showMessage = () => {
-    alert(this.state.message)
+    const { message } = this.state
+    alert(message)
   }
 
   render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
           className={styles.link}
           href="https://www.developerhandbook.com"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img className={styles.image} src={logo} alt="DeveloperHandbook.com" />
         </a>
@@ -30,7 +32,7 @@ class App extends React.Component {
           A bare bones React boilerplate, featuring Webpack 4, React, Redux, Jest, and
           Babel 7
         </h1>
-        <button className={styles.button} onClick={this.showMessage}>
+        <button type="button" className={styles.button} onClick={this.showMessage}>
           Show me a message
         </button>
       </main>
