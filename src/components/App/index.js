@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { hot } from 'react-hot-loader'
+
 import styles from './styles.module.scss'
+import logo from '../../img/logo.png'
 
 import alert from '../../decorators/alert'
 
@@ -22,11 +24,7 @@ class App extends React.Component {
           href="https://www.developerhandbook.com"
           target="_blank"
         >
-          <img
-            className={styles.image}
-            src="/img/developerhandbook.png"
-            alt="DeveloperHandbook.com"
-          />
+          <img className={styles.image} src={logo} alt="DeveloperHandbook.com" />
         </a>
         <h1 className={styles.heading}>
           A bare bones React boilerplate, featuring Webpack 4, React, Redux, Jest, and
