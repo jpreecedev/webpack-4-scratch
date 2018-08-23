@@ -6,9 +6,8 @@ import CleanWebpackPlugin from 'clean-webpack-plugin'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 export default {
-  devtool: 'source-map',
-  devServer: {
-    https: true
+  output: {
+    filename: isDevelopment ? '[name].js' : '[name].[hash].js'
   },
   module: {
     rules: [
@@ -27,13 +26,13 @@ export default {
               modules: true,
               localIdentName: '[name]__[local]___[hash:base64:5]',
               camelCase: true,
-              sourceMap: true
+              sourceMap: isDevelopment
             }
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
+              sourceMap: isDevelopment
             }
           }
         ]
@@ -47,7 +46,7 @@ export default {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
+              sourceMap: isDevelopment
             }
           }
         ]
@@ -57,7 +56,7 @@ export default {
         use: [
           {
             loader: 'html-loader',
-            options: { minimize: true }
+            options: { minimize: !isDevelopment }
           }
         ]
       }
@@ -73,8 +72,8 @@ export default {
       filename: './index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: isDevelopment ? '[name].css' : '[name].[hash].css',
+      chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
     }),
     new CopyWebpackPlugin([{ from: './public' }])
   ]
