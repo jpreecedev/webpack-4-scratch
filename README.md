@@ -19,14 +19,14 @@ A pre-configured starter project with the following features (all accurate at ti
 
 ```shell
 # Run the dev server on port 8080
-yarn start
+npm start
 
 # Generate a production build
-yarn build
+npm run build
 
 # Run ESLint
-yarn lint
+npm run lint
 
 # Run unit tests
-yarn test
+npm test
 ```
