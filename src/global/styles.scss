@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i');
+
+body {
+  padding: 20px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.text-center {
+  text-align: center;
+}
