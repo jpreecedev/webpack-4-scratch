@@ -19,12 +19,12 @@ test('should render "Hello, World!" as title', () => {
   )
 })
 
-test('should show an alert with the message from the decorator', () => {
+test('should show an alert with the message', () => {
   const renderedComponent = render()
   const button = renderedComponent.find('button')
 
   button.simulate('click')
 
   expect(global.alert).toHaveBeenCalledTimes(1)
-  expect(global.alert).toHaveBeenCalledWith('Goodbye, World!')
+  expect(global.alert).toHaveBeenCalledWith('Hello, World!')
 })
