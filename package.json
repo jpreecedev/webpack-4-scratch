@@ -81,7 +81,7 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-hot-loader": "^4.6.0",
+    "react-hot-loader": "^4.6.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "regenerator-runtime": "^0.13.1"
