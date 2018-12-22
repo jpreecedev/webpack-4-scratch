@@ -5,5 +5,8 @@ import common from './webpack.common.babel'
 
 export default merge(common, {
   mode: 'development',
-  devtool: 'source-map'
+  devtool: 'source-map',
+  devServer: {
+    disableHostCheck: true
+  }
 })
