@@ -4,6 +4,7 @@ import HtmlWebPackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
+import WebpackBar from 'webpackbar'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -108,6 +109,7 @@ export default {
       filename: isDevelopment ? '[name].css' : '[name].[hash].css',
       chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
     }),
-    new CopyWebpackPlugin([{ from: './public' }])
+    new CopyWebpackPlugin([{ from: './public' }]),
+    new WebpackBar()
   ]
 }
