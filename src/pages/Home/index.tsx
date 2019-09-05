@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react"
 import { Link } from "react-router-dom"
 
-import { Layout } from "../../components/Layout"
+import { Button } from "../../components/Button"
 
 interface HomeProps {}
 
@@ -13,16 +13,17 @@ const Home: FunctionComponent<HomeProps> = () => {
   }, [])
 
   return (
-    <Layout>
-      <h1>
+    <>
+      <h1 data-testid="home-title">
         A bare bones React boilerplate, featuring Webpack 4, React, Jest, PostCSS and
         TypeScript
       </h1>
       <p>Here is a lovely random number: {state}</p>
+      <Button>I am a primary button</Button>
       <Link to="/about">About</Link>
       <br />
       <Link to="/nope">404 Page</Link>
-    </Layout>
+    </>
   )
 }
 

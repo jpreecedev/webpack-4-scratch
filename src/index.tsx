@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { Home } from "./pages/Home"
 import { About } from "./pages/About"
 import { NotFound } from "./pages/NotFound"
+import { Layout } from "./components/Layout"
 
 import "./global/styles"
 
@@ -13,12 +14,14 @@ if (module.hot) {
 }
 
 ReactDOM.render(
-  <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="" component={NotFound} />
-    </Switch>
-  </Router>,
+  <Layout>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="" component={NotFound} />
+      </Switch>
+    </Router>
+  </Layout>,
   document.getElementById("root")
 )

@@ -12,7 +12,6 @@ h1 {
 }
 
 .button {
-  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -21,6 +20,14 @@ h1 {
   display: block;
   font-size: 16px;
   margin: 16px auto;
+}
+
+.button-primary {
+  background-color: #4caf50;
+}
+
+.button-secondary {
+  background-color: #0d4f8b;
 }
 
 .text-center {

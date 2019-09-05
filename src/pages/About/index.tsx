@@ -1,15 +1,16 @@
 import React, { FunctionComponent } from "react"
 import { Link } from "react-router-dom"
 
-import { Layout } from "../../components/Layout"
+import { Button } from "../../components/Button"
 
 interface AboutProps {}
 
 const About: FunctionComponent<AboutProps> = () => (
-  <Layout>
+  <>
     <h1 className="text-center">About page</h1>
+    <Button color="secondary">I am a secondary button</Button>
     <Link to="/">Home</Link>
-  </Layout>
+  </>
 )
 
 export { About }

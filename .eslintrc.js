@@ -3,6 +3,7 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
     "plugin:prettier/recommended"
   ],
   parserOptions: {
@@ -18,7 +19,8 @@ module.exports = {
     }
   },
   env: {
-    browser: true
+    browser: true,
+    jest: true
   },
   overrides: [
     {
