@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { shallow } from 'enzyme'
+import * as React from "react"
+import { shallow } from "enzyme"
 
-import Home from '..'
+import Home from ".."
 
 function render(props) {
   return shallow(<Home {...props} />)
@@ -13,18 +13,18 @@ beforeAll(() => {
 
 test('should render "Hello, World!" as title', () => {
   const renderedComponent = render()
-  const header = renderedComponent.find('h1')
+  const header = renderedComponent.find("h1")
   expect(header.text()).toBe(
-    'A bare bones React boilerplate, featuring Webpack 4, React, Redux, Jest, and Babel 7'
+    "A bare bones React boilerplate, featuring Webpack 4, React, Jest, PostCSS and TypeScript"
   )
 })
 
-test('should show an alert with the message', () => {
+test("should show an alert with the message", () => {
   const renderedComponent = render()
-  const button = renderedComponent.find('button')
+  const button = renderedComponent.find("button")
 
-  button.simulate('click')
+  button.simulate("click")
 
   expect(global.alert).toHaveBeenCalledTimes(1)
-  expect(global.alert).toHaveBeenCalledWith('Hello, World!')
+  expect(global.alert).toHaveBeenCalledWith("Hello, World!")
 })

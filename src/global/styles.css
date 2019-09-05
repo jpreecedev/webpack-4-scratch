@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i');
-
 body {
   padding: 20px;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: "IBM Plex Serif", serif;
 }
 
 :root {
