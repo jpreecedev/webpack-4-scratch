@@ -6,8 +6,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.dev.js",
     "dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
-    "lint": "eslint ./src",
-    "lint:prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest"
   },
   "repository": {
@@ -48,6 +47,7 @@
     "cssnano": "^4.1.10",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-jest": "^22.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "file-loader": "^4.2.0",

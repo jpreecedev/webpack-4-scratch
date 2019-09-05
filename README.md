@@ -1,4 +1,4 @@
-# Webpack 4, React, Jest, Babel 7 starter project
+# A bare bones React boilerplate, featuring Webpack 4, React, Jest, PostCSS and TypeScript
 
 [![Build Status](https://travis-ci.org/jpreecedev/webpack-4-scratch.svg?branch=master)](https://travis-ci.org/jpreecedev/webpack-4-scratch)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -7,12 +7,13 @@
 
 A pre-configured starter project with the following features (all accurate at time of writing, very likely subject to change!);
 
+- React / React Router
 - Webpack 4
-- Babel 7
+- TypeScript
+- PostCSS
 - Jest
-- Enzyme
+- React Testing Library
 - ESLint & Prettier
-- Generator (async/await) polyfill
 
 ## Main commands
 
@@ -26,6 +27,6 @@ npm run build
 # Run ESLint
 npm run lint
 
-# Run unit tests
+# Run unit/integration tests
 npm test
 ```
