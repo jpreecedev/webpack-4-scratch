@@ -2,10 +2,12 @@
   "name": "webpack-4-scratch",
   "version": "2.0.0",
   "description": "",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --hot --config webpack.dev.js",
     "dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "ts:defs": "tsc --build tsconfig.declaration.json",
     "lint": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest"
   },

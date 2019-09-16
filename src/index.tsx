@@ -7,7 +7,7 @@ import { About } from "./pages/About"
 import { NotFound } from "./pages/NotFound"
 import { Layout } from "./components/Layout"
 
-import "./global/styles"
+require("./global/styles.css")
 
 if (module.hot) {
   module.hot.accept()
