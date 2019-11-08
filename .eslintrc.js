@@ -7,11 +7,9 @@ module.exports = {
     "plugin:prettier/recommended"
   ],
   parserOptions: {
+    tsconfigRootDir: __dirname,
     ecmaVersion: 2018,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true
-    }
+    sourceType: "module"
   },
   settings: {
     react: {
@@ -21,13 +19,5 @@ module.exports = {
   env: {
     browser: true,
     jest: true
-  },
-  overrides: [
-    {
-      files: "webpack.*.js",
-      rules: {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
-  ]
+  }
 }

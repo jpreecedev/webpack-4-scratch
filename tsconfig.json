@@ -17,6 +17,6 @@
     "isolatedModules": true,
     "jsx": "react"
   },
-  "include": ["./global.d.ts"],
+  "include": ["src/**/*.ts*", "./global.d.ts"],
   "exclude": ["node_modules", "webpack.*.js"]
 }
